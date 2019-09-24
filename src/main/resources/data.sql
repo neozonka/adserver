@@ -1,0 +1,1 @@
+INSERT INTO common values(0,0,0);
