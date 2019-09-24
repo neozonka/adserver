@@ -160,7 +160,7 @@ public class AdsDaoImpl implements AdsDao {
 
     @Override
     public synchronized void deleteAd(int adId) {
-        final String sql = "delete from ads where adid=:adId";  
+        final String sql = "delete from ads where adid=:adId";
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("adId", adId);
         template.execute(sql, map, new PreparedStatementCallback<Object>() {
